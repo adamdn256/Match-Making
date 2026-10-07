@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Match Maker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Match Maker</h1>
+    <p class="intro">Enter two names to see how well they match.</p>
+
+    <div class="field">
+      <label for="name1">First name</label>
+      <input id="name1" type="text" maxlength="30" autocomplete="off" placeholder="e.g. Amara">
+    </div>
+
+    <div class="field">
+      <label for="name2">Second name</label>
+      <input id="name2" type="text" maxlength="30" autocomplete="off" placeholder="e.g. Daniel">
+    </div>
+
+    <p id="error" class="error" role="alert"></p>
+
+    <button id="matchBtn" type="button">Find the match</button>
+
+    <section id="result" class="result" aria-live="polite" hidden>
+      <div class="heart" id="heart">&#10084;</div>
+      <div class="score"><span id="score">0</span>%</div>
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
